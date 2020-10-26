@@ -18,7 +18,9 @@ button.addEventListener("click",
     }
     console.log(numeri);
 
+    //utilizzo questa variabile per stampare in html
     var testostampato = "";
+
     for (var i = 0; i <100; i++)
     {
 
@@ -39,6 +41,8 @@ button.addEventListener("click",
          numeri[i]= "Buzz";
         }
         console.log(numeri[i]);
+        
+        //stampo dinamicamente in html
         testostampato = testostampato + "<li>" + numeri[i] + "</li>";
         document.getElementById('stampa').innerHTML = testostampato;
 
